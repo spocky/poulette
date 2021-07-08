@@ -5,10 +5,16 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    html, body{height:100%;font-family:Helvetica,Arial,sans-serif;}
+  @font-face {
+      font-family: "Berlin Sans";
+      font-weight: bold;
+      src: url("./brlnsdb.ttf") ;
+    }
+    html, body{height:100%;font-family:Verdana, Geneva, Helvetica,Arial,sans-serif;}
     body {margin:0;}
     main {display:flex;flex-wrap: wrap;justify-content:space-between;padding:2rem;}
     footer {background:#000; color:#fff; min-height:5rem; padding:1rem 2rem;}
+    footer p {font-family:"Berlin Sans", sans-serif;}
     img {max-height:15rem;max-width:100%;height:auto;z-index:-2;}
     main>div {position:relative;}
     #part1, #illu1 {flex-basis: 50%}
@@ -19,12 +25,13 @@
     #part3 {flex-basis: 57%;}
     #part4 {flex-basis: 100%;}
     p {text-align: justify;}
-    h1 {display:flex; justify-content: space-between;flex-basis:100%;flex-wrap:wrap;}
-    h2 {display:inline-block;position: relative;background-color:currentColor;color:#fff;line-height:2rem;}
+    h1 {font-family:"Berlin Sans", sans-serif; font-size:3rem; margin-top:0; display:flex; justify-content: space-between;flex-basis:100%;flex-wrap:wrap;}
+    h2 {display:inline-block;position: relative;background-color:currentColor;color:#fff;line-height:2rem;margin-bottom:0;}
     #part1 h2 {background-color:#f7911d;}
     #part2 h2 {background-color:#99ca3a;}
     #part3 h2 {background-color:#02aab8}
     #part4 h2 {background-color:#dc098c;}
+    #part2 em {display:block;}
     #part4 a {color:#000;font-weight:bold;text-decoration:none;}
     #wrapper {display: flex;flex-direction: row;flex: 1;flex-wrap:wrap;padding-left:2rem;justify-content:inherit}
     footer p {font-weight:bold;font-size:.9rem;text-align:center;}
@@ -57,11 +64,13 @@
     }
     .cryptedmail:after {content: attr(data-name) "@" attr(data-domain) "." attr(data-tld);}
     .cryptedphone:after {content: attr(data-name1) " " attr(data-name2) " " attr(data-name3) " " attr(data-name4) " " attr(data-name5);}
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1023px) {
     #part1, #part2, #part3, #part4, #illu1, #illu2, #wrapper, footer li {flex-basis:100%;margin-bottom:1rem;border:none;padding-left:0;}
     footer ol {flex-wrap:wrap;}
     #illu1 {justify-content:center;margin:0;}
     #illu2 {order:1;}
+    h1 {font-size:2rem;}
+    h2 {font-size:1.3rem;}
     h1 em {text-align:right;flex-basis:100%;}
   }
   </style>
@@ -96,7 +105,7 @@
         <p>Pour s’impliquer, proposer quelque chose ? Ou si je veux juste être tenu au courant ? Et si j’ai des questions ?</p>
         <p><em>J’envoie un mail à 
           <a href="#" class="cryptedmail" data-name="festivaldespoulettes" data-domain="protonmail" data-tld="com" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a> ou j’appelle/écris au 
-          <a href="#" class="cryptedphone" data-name1="07" data-name2="81" data-name3="95" data-name4="88" data-name5="42" onclick="window.location.href = 'tel:' + this.dataset.name1 + this.dataset.name2 + this.dataset.name3 + this.dataset.name4 + this.dataset.name5; return false;"></a>
+          <a href="#" class="cryptedphone" data-name1="07" data-name2="81" data-name3="95" data-name4="88" data-name5="42" onclick="window.location.href = 'tel:' + this.dataset.name1 + this.dataset.name2 + this.dataset.name3 + this.dataset.name4 + this.dataset.name5; return false;"></a></em></p>
       </div>
       </div>
     </main>
