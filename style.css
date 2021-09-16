@@ -44,7 +44,7 @@
     #part5 ol>li ul { margin:0; padding: 0 1.5rem;}
     #part5 ol>li em {display:block;margin-bottom:.3rem;}
     #part5 b {display:inline;color:#dc098c;}
-    #part5 i {font-style: italic;color:#999;}
+    #part5 i {font-style: italic;color:#999999;}
     main em {font-weight:bold;display:block;margin-top: .5rem;}
     h2:after {
     position: absolute;
