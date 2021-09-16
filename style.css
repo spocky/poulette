@@ -41,9 +41,10 @@
     footer .inner, main {max-width:90rem;margin:auto;}
     #part5 ol {display:block; list-style: none;column-count: 3;column-rule: 1px solid #000;}
     #part5 ol>li {margin-top: 1rem;flex-basis:100%; break-inside: avoid;font-size:.9rem;}
-    #part5 ol>li ul { margin:0; padding: 0 1rem;}
+    #part5 ol>li ul { margin:0; padding: 0 1.5rem;}
     #part5 ol>li em {display:block;margin-bottom:.3rem;}
     #part5 b {display:inline;color:#dc098c;}
+    #part5 i {font-style: italic;color:#999;}
     main em {font-weight:bold;display:block;margin-top: .5rem;}
     h2:after {
     position: absolute;
@@ -67,7 +68,7 @@
     background-color: inherit;
     transform: skewX(-10deg);
     }
-    .highlight { background:#ccc; padding:.1rem .3rem; }
+    .highlight { background:#ccc; padding:.3rem .3rem; }
     .detailbottom {text-align:center;}
     .detailbottom img {display:block;margin:auto;}
     .detailbottom a {display:inline;color:#fff !important;}
